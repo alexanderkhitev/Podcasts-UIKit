@@ -389,9 +389,10 @@ extension PlayerDetailsView {
             self.playPause()
             return .success
         }
+        // TODO: - Alex
 
-        commandCenter.nextTrackCommand.addTarget(self, action: #selector(handleNextTrack))
-        commandCenter.previousTrackCommand.addTarget(self, action: #selector(handlePrevTrack))
+//        commandCenter.nextTrackCommand.addTarget(self, action: #selector(handleNextTrack))
+//        commandCenter.previousTrackCommand.addTarget(self, action: #selector(handlePrevTrack))
     }
 
     @objc fileprivate func handleNextTrack() {
